@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.block {
+    height: 100vh;
+    color: white;
+    padding-top: 30vh;
+    padding-left: 15vw;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    background: #444 url(https://vsegda-pomnim.com/uploads/posts/2022-04/1650920434_11-vsegda-pomnim-com-p-zasnezhennie-gori-foto-15.jpg);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: saturate(80%) brightness(70%);
+}
+
+.title {
+    display: inline-block;
+    font-size: 4vw;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    border-bottom: .4vw solid #fff;
+    padding-bottom: 1.5vw;
+}
+
+.title::after {
+    content: '';
+    padding-right: 4vw;
+}
