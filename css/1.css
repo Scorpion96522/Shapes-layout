@@ -4,6 +4,7 @@
 }
 
 .block {
+    --shadow: 0 2px 4px rgba(0,0,0,0.4);
     height: 100vh;
     color: white;
     padding-top: 30vh;
@@ -27,11 +28,18 @@
     font-size: 4vw;
     text-transform: uppercase;
     letter-spacing: 1vw;
-    border-bottom: .4vw solid #fff;
-    padding-bottom: 1.5vw;
+    text-shadow: var(--shadow);
+    position: relative;
 }
 
 .title::after {
     content: '';
-    padding-right: 4vw;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: .4vw;
+    bottom: -1.5vw;
+    right: -4vw;
+    background-color: #fff;
+    box-shadow: var(--shadow);
 }
