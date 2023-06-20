@@ -5,6 +5,7 @@
 
 .block {
     height: 700px;
+    /* height: 100vh; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
